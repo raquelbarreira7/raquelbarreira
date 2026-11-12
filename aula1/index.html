@@ -11,12 +11,13 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
-        background-color: peru;
+        background-color: burlywood;
         color: white;
       }
 
       header h1 {
         margin: 0;
+        color: #050505;
       }
 
       header nav ul {
@@ -30,8 +31,19 @@
       }
 
       header nav a {
+        display: inline-block;
+        background-color: #722202;
+        padding: 8px 20px;
         text-decoration: none;
         color: white;
+        font-size: 20px;
+        border-radius: 999px;
+        transition: background-color 0.2s;
+      }
+
+      header nav a:hover {
+        background-color: #f7b462;
+        color: #111;
       }
 
       body {
@@ -48,15 +60,29 @@
       }
 
       footer {
+        display: flex;
+        min-height: 80px;
         background-color: peru;
+        position: relative;
+        justify-content: center;
         text-align: center;
         padding: 0 0 0;
         margin-top: auto;
         color: #111;
+        height: 70px;
+        width: auto;
+      }
+      .imagem {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 70px;
+        width: auto;
       }
 
       footer p {
-        margin: 15px 0;
+        margin: 30px 0;
         color: #111;
         font-size: 14px;
       }
@@ -257,6 +283,11 @@
     </main>
 
     <footer>
+      <img
+        class="imagem"
+        src="../img/logo2.png"
+        alt="Faculdade de Farmácia da Universidade de Lisboa"
+      />
       <p>Raquel Barreira - nº 72059</p>
     </footer>
   </body>
