@@ -97,18 +97,35 @@ main > h2 {
 
 /* Rodapé */
 footer {
-    background-color: peru;
-    text-align: center;
-    padding: 0 0 0;
-    margin-top: auto;
-    color: #111;
-}
+        display: flex;
+        min-height: 80px;
+        background-color: peru;
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        padding: 0 0 0;
+        margin-top: auto;
+        color: #111;
+        height: 70px;
+        width: auto;
+      }
+      .imagem {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 70px;
+        width: auto;
+      }
 
-footer p {
-    margin: 15px 0;
-    color: #111;
-    font-size: 14px;
-}
+      footer p {
+        margin: 30px 0;
+        color: #111;
+        font-size: 14px;
+      }
+
+
+
 
 /* Telemóveis */
 @media (max-width: 600px) {
